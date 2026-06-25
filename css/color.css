@@ -167,3 +167,12 @@ body{ margin-left:0 !important; }
 .main-footer{ left:0 !important; }                 /* align footer full-width (rail removed) */
 .subfooter{ background:var(--ks-navy) !important; } /* match footer navy */
 .footer-logo img{ height:52px; width:52px; border-radius:50%; object-fit:cover; }
+
+/* ---------- gold titles over photos (match homepage hero) ---------- */
+.fixed-column-wrap_title h2,
+.hero-title h2, .hero-title .section-title h2{
+  color:#e3c178 !important; text-shadow:0 2px 24px rgba(0,0,0,.55);
+}
+.fixed-column-wrap_title p{
+  color:#ecd2a0 !important; text-shadow:0 1px 14px rgba(0,0,0,.5);
+}
