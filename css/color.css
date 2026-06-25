@@ -22,3 +22,97 @@
     object-fit: cover;
 }
 @media (max-width: 1024px){ .header-logo img { height: 44px; width: 44px; } }
+
+/* ============================================================
+   K SPACES — ARCHITECTURAL DARK THEME (overrides)
+   ============================================================ */
+:root{
+  --ks-bg:#15161b;          /* warm near-black */
+  --ks-surface:#1d1f26;
+  --ks-surface2:#23262f;
+  --ks-header:#101219;
+  --ks-text:#ece9e3;        /* warm off-white */
+  --ks-muted:#a8a49b;
+  --ks-accent:#c2906a;      /* soft terracotta / brass */
+  --ks-accent2:#dcb588;
+  --ks-line:rgba(255,255,255,.10);
+  --ks-radius:18px;
+}
+
+/* ---------- Typography ---------- */
+body, p, a, li, span, label, input, textarea, button, select,
+.custom-form input, .text, .breadcrumbs, .nav-holder nav a,
+.grid-det_link, .horizonral-subtitle, .section-title_category, .pr-list{
+  font-family:'Jost', -apple-system, "Helvetica Neue", Arial, sans-serif !important;
+  letter-spacing:.2px;
+}
+h1,h2,h3,h4,h5,h6,
+.section-title h2,.hero-title h2,.hero-wrap .section-title h2,
+.column-wrap .section-title h2,.pr-subtitle,.pr-title,
+.testi-item p,.error-wrap h2,.list-single-main-item-title h3{
+  font-family:'Fraunces', Georgia, "Times New Roman", serif !important;
+  font-weight:300 !important;
+  letter-spacing:.4px;
+}
+h1, .hero-title h2{ font-weight:300 !important; }
+
+/* ---------- Dark base ---------- */
+html, body{ background:var(--ks-bg) !important; color:var(--ks-text) !important; }
+section, .content, #wrapper, .column-wrap, .breadcrumbs,
+.section.parallax-section, .single-page-decor, .main-register-wrap{
+  background-color:var(--ks-bg) !important;
+}
+p, li, .text p, .pr-list li, address, .contact-details li, .dn-counter{ color:var(--ks-muted) !important; }
+h1,h2,h3,h4,h5,h6, strong{ color:var(--ks-text) !important; }
+a{ color:var(--ks-text); }
+a:hover{ color:var(--ks-accent) !important; }
+.horizonral-subtitle span, .section-number, .breadcrumbs a:hover{ color:var(--ks-accent) !important; }
+
+/* header / left rail / footer */
+.main-header, .left-panel, .footer, footer, .nav-holder, .nav-inner,
+.main-menu, .nav-button-wrap{ background:var(--ks-header) !important; }
+.footer, footer, .height-emulator{ background:var(--ks-header) !important; }
+
+/* surfaces / cards */
+.accordion-inner, .team-box, .testi-item, .pr-list.dark-bg,
+.custom-form .selectbox, .list-single-main-item, .contacts-info{
+  background:var(--ks-surface) !important; color:var(--ks-text) !important;
+  border-radius:var(--ks-radius); border:1px solid var(--ks-line);
+}
+
+/* forms */
+.custom-form textarea, .custom-form input[type="text"],
+.custom-form input[type=email], .custom-form input, .error-wrap form input{
+  background:var(--ks-surface) !important; color:var(--ks-text) !important;
+  border:1px solid var(--ks-line) !important; border-radius:12px !important;
+}
+.custom-form label{ color:var(--ks-muted) !important; }
+::placeholder{ color:#7d7a73 !important; }
+
+/* ---------- Soft corners (de-box) ---------- */
+.gallery-item, .grid-item-holder, .grid-item-holder img,
+.team-box, .team-box img, .testi-item, .respimg, img.respimg,
+.box-item img, .single-slider img, .list-single-main-media img,
+.blog-media img, .map, iframe.map{
+  border-radius:var(--ks-radius) !important;
+}
+.gallery-item, .grid-item-holder{ overflow:hidden; }
+.map, iframe.map{ overflow:hidden; }
+
+/* buttons — soft + accent */
+.btn, button.btn, a.btn, input[type="submit"], .grid-det_link,
+.start-btn, .more-btn, .nav-button{ border-radius:40px !important; }
+.btn, input[type=submit]{
+  background:var(--ks-accent) !important; color:#15161b !important;
+  border:none !important; letter-spacing:1px;
+}
+.btn:hover, input[type=submit]:hover{ background:var(--ks-accent2) !important; color:#15161b !important; }
+
+/* accents & misc */
+.pr-bg, .section-title:before, .horizonral-subtitle strong{ color:var(--ks-accent) !important; }
+.swiper-pagination-bullet-active, .hero-slider-wrap_pagination .swiper-pagination-bullet-active{ background:var(--ks-accent) !important; }
+::selection{ background:var(--ks-accent); color:#15161b; }
+hr, .fl-wrap hr{ border-color:var(--ks-line) !important; }
+
+/* keep header logo as the round brand badge */
+.header-logo img{ height:52px; width:52px; border-radius:50%; object-fit:cover; }

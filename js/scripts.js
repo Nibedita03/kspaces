@@ -143,7 +143,7 @@ function initTheside() {
                 preloadImages: false,
                 loop: true,
                 resistance: true,
-                direction: 'vertical',
+                direction: 'horizontal',
                 spaceBetween: 10,
                 effect: "slide",
             });
