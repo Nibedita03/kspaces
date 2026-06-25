@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 72" width="248" height="72">
+  <!-- navy rounded chip (blue background, no circle) -->
+  <rect x="0" y="0" width="248" height="72" rx="12" fill="#14345c"/>
+
+  <!-- K mark inside a white square frame -->
+  <g transform="translate(14,11)">
+    <rect x="0" y="0" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="2.4"/>
+    <line x1="14" y1="9"  x2="14" y2="41" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round"/>
+    <line x1="14" y1="25" x2="40" y2="9"  stroke="#ffffff" stroke-width="6.5" stroke-linecap="round"/>
+    <line x1="14" y1="25" x2="40" y2="41" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="78" y="40" font-family="'Raleway','Helvetica Neue',Arial,sans-serif"
+        font-size="26" font-weight="700" letter-spacing="3" fill="#ffffff">K SPACES</text>
+  <text x="80" y="56" font-family="'Raleway','Helvetica Neue',Arial,sans-serif"
+        font-size="10" font-weight="500" letter-spacing="6" fill="#cfd8e6">KLINKARAA</text>
+</svg>
