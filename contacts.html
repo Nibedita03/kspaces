@@ -3,7 +3,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
         <title>K Spaces | Architecture & Interiors</title>
@@ -68,7 +68,14 @@
         <div id="main">
             <!-- header start  -->
             <header class="main-header">
-                <a href="index.html" class="header-logo ajax"><img src="images/kspaces-badge.png" alt=""> </a>
+                <a href="index.html" class="header-logo"><img src="images/kspaces-badge.png" alt=""> </a>
+                <nav class="ks-topnav">
+                    <a href="index.html" class="">Home</a>
+                    <a href="portfolio.html" class="">Work</a>
+                    <a href="about.html" class="">Studio</a>
+                    <a href="process.html" class="">Process</a>
+                    <a href="contacts.html" class="ks-active">Contact</a>
+                </nav>
                 <!-- sidebar-button --> 
                 <!-- nav-button-wrap-->
                 <div class="nav-button-wrap">
@@ -128,14 +135,14 @@
                                         <a href="index.html" >Home</a>
                                         <!--level 2 -->
                                         <!--<ul>
-                                            <li><a href="index.html" class="ajax act-link">Half Slider</a></li>
-                                            <li><a href="index2.html" class="ajax">Multi Slideshow</a></li>
-																																												<li><a href="index8.html" class="ajax">Carousel</a></li>
-                                            <li><a href="index3.html" class="ajax">Impulse Image</a></li>
-                                            <li><a href="index4.html" class="ajax">Fullscreen  Image</a></li>
-                                            <li><a href="index5.html" class="ajax">Fullscreen  Slider</a></li>
-                                            <li><a href="index6.html" class="ajax">Fullscreen  Slideshow</a></li>
-                                            <li><a href="index7.html" class="ajax">Video</a></li>
+                                            <li><a href="index.html" class="act-link">Half Slider</a></li>
+                                            <li><a href="index2.html" class="">Multi Slideshow</a></li>
+																																												<li><a href="index8.html" class="">Carousel</a></li>
+                                            <li><a href="index3.html" class="">Impulse Image</a></li>
+                                            <li><a href="index4.html" class="">Fullscreen  Image</a></li>
+                                            <li><a href="index5.html" class="">Fullscreen  Slider</a></li>
+                                            <li><a href="index6.html" class="">Fullscreen  Slideshow</a></li>
+                                            <li><a href="index7.html" class="">Video</a></li>
                                         </ul>
                                         <!--level 2 end -->
                                     </li>
@@ -143,14 +150,14 @@
                                         <a href="about.html" >About Us</a>
                                         <!--level 2 -->
                                          <ul>
-											<li><a href="about.html" class="ajax">Overview</a></li>
-                                            <li><a href="team.html" class="ajax">Team</a></li>
-                                            <!--<li><a href="about-personal.html" class="ajax">About Personal</a></li>-->
+											<li><a href="about.html" class="">Overview</a></li>
+                                            <li></li>
+                                            <!--<li><a href="about-personal.html" class="">About Personal</a></li>-->
                                         </ul>
                                         <!--level 2 end -->
                                     </li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="process.html" class="ajax">Process</a></li>
+                                    <li><a href="process.html" class="">Process</a></li>
                                     <li><a href="contacts.html" class="act-link">Contacts</a></li>
                                     
                                 </ul>
@@ -322,13 +329,13 @@
                                         <!-- footer-contacts-->
                                         <div class="footer-contacts footer-box fl-wrap">
                                             <ul>
-                                                <li><span>Call:</span><a href="#">(+91)40-4857-7181</a></li>
+                                                <li><span>Call:</span><a href="tel:+917680991923">+91 76809 91923</a></li>
                                                 <li><span>Write  :</span><a href="#">kspacessupport@gmail.com</a></li>
                                                 <li><span>Find us : </span><a href="https://maps.app.goo.gl/krULxRX7T75j2xBm6" target="_blank">Madhapur, Hyderabad-81, India</a></li>
                                             </ul>
                                         </div>
                                         <!-- footer contacts end -->
-                                        <a href="contacts.html" class="ajax fc_button">Get In Touch <i class="fal fa-envelope"></i></a>
+                                        <a href="contacts.html" class="fc_button">Get In Touch <i class="fal fa-envelope"></i></a>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="footer-header fl-wrap"><span>02.</span> Subscribe</div>
@@ -351,7 +358,6 @@
                                     <span>&#169; K Spaces Interiors / All rights reserved. </span>
                                 </div>
                                 <!-- policy-box end-->
-                                <a href="#" class="to-top-btn to-top">Back to top <i class="fal fa-long-arrow-up"></i></a>
                             </div>
                         </div>
                         <div class="footer-canvas">
@@ -376,5 +382,25 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/core.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- contact form: opens email (no server needed) -->
+        <script>
+        (function(){
+          var f=document.getElementById('contactform');
+          if(!f) return;
+          var btn=document.getElementById('submit');
+          function send(e){
+            if(e) e.preventDefault();
+            var g=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
+            var name=g('name'), email=g('email'), phone=g('phone'), subj=g('subject'), msg=g('comments');
+            var to='kspacessupport@gmail.com';
+            var subject=encodeURIComponent('Website enquiry'+(subj&&subj!=='Subject'?' - '+subj:'')+(name?' from '+name:''));
+            var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nPhone: '+phone+'\nSubject: '+subj+'\n\nMessage:\n'+msg);
+            window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;
+            return false;
+          }
+          f.addEventListener('submit', send);
+          if(btn) btn.addEventListener('click', send);
+        })();
+        </script>
     </body>
 </html>

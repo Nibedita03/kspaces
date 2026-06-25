@@ -5,7 +5,11 @@ function initTheside() {
             firstLoad();
         });
         function firstLoad() {
-            var KS_MIN = 1600; // enough to see the K form, then go
+            var KS_MIN = 1500; // first visit: show the K form
+            try {
+                if (sessionStorage.getItem('ks_seen') === '1') { KS_MIN = 0; } // already seen this session -> instant
+                sessionStorage.setItem('ks_seen', '1');
+            } catch (e) {}
             var elapsed = (window.performance && performance.now) ? performance.now() : KS_MIN;
             var wait = Math.max(0, KS_MIN - elapsed);
             setTimeout(function() {
@@ -1177,3 +1181,13 @@ function readyFunctions() {
     initTheside();
     initparallax();
 }
+/* ===== K Spaces — user-friendly enhancements (additive) ===== */
+(function ($) {
+    $(function () {
+        var $top = $('.ks-top');
+        function st(){ return Math.max($(window).scrollTop(), $('#wrapper').scrollTop() || 0, $('html').scrollTop() || 0); }
+        function upd(){ if (st() > 400) $top.addClass('show'); else $top.removeClass('show'); }
+        $(window).add('#wrapper').on('scroll', upd); upd();
+        $top.on('click', function () { $('html,body,#wrapper').animate({ scrollTop: 0 }, 600); return false; });
+    });
+})(jQuery);
