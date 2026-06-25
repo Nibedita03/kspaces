@@ -27,27 +27,38 @@
         <!--Loader -->
         <div class="loader2" id="kspaces-loader">
             <div class="ks-loader-center">
-                <img class="ks-logo" src="images/loader-logo.png" alt="K Spaces">
+                <svg class="ks-k-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+                    <rect class="ks-box" x="19" y="19" width="92" height="92"
+                          fill="none" stroke="#ffffff" stroke-width="2.5"
+                          stroke-dasharray="368" stroke-dashoffset="368"/>
+                    <line class="ks-v" x1="43" y1="31" x2="43" y2="99"
+                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
+                          stroke-dasharray="68" stroke-dashoffset="68"/>
+                    <line class="ks-a1" x1="43" y1="65" x2="101" y2="31"
+                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
+                          stroke-dasharray="68" stroke-dashoffset="68"/>
+                    <line class="ks-a2" x1="43" y1="65" x2="101" y2="99"
+                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
+                          stroke-dasharray="68" stroke-dashoffset="68"/>
+                </svg>
+                <div class="ks-label-text">K&nbsp;SPACES</div>
             </div>
         </div>
         <style>
         #kspaces-loader{background:#033067;display:flex;align-items:center;justify-content:center;}
         .ks-loader-center{text-align:center;}
-        .ks-logo{
-            width:210px;height:auto;display:block;margin:0 auto;
-            opacity:0;transform:scale(.86);
-            animation:ksLogoIn 1s cubic-bezier(.2,.7,.2,1) forwards, ksPulse 2.4s ease-in-out 1s infinite;
+        .ks-k-svg{width:128px;height:128px;display:block;margin:0 auto 18px;overflow:visible;}
+        .ks-box{animation:ksDraw .5s ease forwards;}
+        .ks-v {animation:ksDraw .4s ease .3s forwards;}
+        .ks-a1{animation:ksDraw .4s ease .65s forwards;}
+        .ks-a2{animation:ksDraw .4s ease .85s forwards;}
+        @keyframes ksDraw{to{stroke-dashoffset:0;}}
+        .ks-label-text{
+            color:rgba(255,255,255,.9);font-size:12px;letter-spacing:9px;
+            font-family:'Raleway',Arial,sans-serif;text-transform:uppercase;
+            opacity:0;animation:ksFade .5s ease 1.15s forwards;
         }
-        @keyframes ksLogoIn{
-            0%{opacity:0;transform:scale(.86);}
-            65%{opacity:1;transform:scale(1.03);}
-            100%{opacity:1;transform:scale(1);}
-        }
-        @keyframes ksPulse{
-            0%,100%{transform:scale(1);}
-            50%{transform:scale(1.035);}
-        }
-        @media(max-width:600px){ .ks-logo{ width:160px; } }
+        @keyframes ksFade{from{opacity:0;letter-spacing:14px;}to{opacity:.9;letter-spacing:9px;}}
         </style>
         <!-- loader end  -->
         <!-- main start  -->
@@ -70,8 +81,8 @@
                 <!--  navigation --> 
                 <div class="header-contacts">
                     <ul>
-                        <li><span> Call </span> <a href="tel:+4(897)56412322">(+91)40-4857-7181</a></li>
-                        <li><span> Write </span> <a href="mailto:info@kspaces.in">INFO@KSPACES.IN</a></li>
+                        <li><span> Call </span> <a href="tel:+914048577181">(+91) 40-4857-7181</a></li>
+                        <li><span> Write </span> <a href="mailto:info@kspaces.in">info@kspaces.in</a></li>
                     </ul>
                 </div>
                 <!-- navigation  end -->            
@@ -182,7 +193,7 @@
                                 </div>
                                 <div class="map-container mc_big">
                                     <!-- <div id="map-single" class="map" data-latlog="[17.441493 , 78.387803]" data-popuptext="We work in Hyderabad . <br> We are waiting for your visit"></div> -->
-                                    <iframe class="map map1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15224.638984241958!2d78.3872936!3d17.4520666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x823ed744693f9cf0!2sK%20SPACES%20INTERIORS!5e0!3m2!1sen!2sin!4v1669819262531!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe class="map map1" src="https://maps.google.com/maps?q=KNR%20Gamut%20Square%2C%20100%20Feet%20Road%2C%20Jaihind%20Enclave%2C%20Madhapur%2C%20Hyderabad%20500081&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                             <!--fixed-column-wrap-content end-->
@@ -214,7 +225,7 @@
                                                     <div class="pr-bg pr-bg-white"></div>
                                                     <ul>
                                                         <li><strong>01.</strong><span>Write : </span> <a href="mailto:info@kspaces.in">info@kspaces.in</a></li>
-                                                        <li><strong>02.</strong><span> Call :</span> <a href="tel:+4(897)56412322">+91 98857-77181 | (+91)40-4857-7181</a></li>
+                                                        <li><strong>02.</strong><span> Call :</span> <a href="tel:+919885777181">+91 98857 77181 | (+91) 40-4857-7181</a></li>
                                                         <li><strong>03.</strong><span> Visit :</span> <a href="#">3rd Floor, KNR Gamut Square Plot No. 5/B, 100' Road, Jaihind Enclave, Madhapur, Hyderabad-81</a></li>
                                                     </ul>
                                                 </div>

@@ -5,7 +5,7 @@ function initTheside() {
             firstLoad();
         });
         function firstLoad() {
-            var KS_MIN = 2000; // hold loader ~2s so the logo is seen
+            var KS_MIN = 1600; // enough to see the K form, then go
             var elapsed = (window.performance && performance.now) ? performance.now() : KS_MIN;
             var wait = Math.max(0, KS_MIN - elapsed);
             setTimeout(function() {
