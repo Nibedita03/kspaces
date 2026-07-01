@@ -5,25 +5,26 @@ function initTheside() {
             firstLoad();
         });
         function firstLoad() {
-            var KS_MIN = 1500; // first visit: show the K form
-            try {
-                if (sessionStorage.getItem('ks_seen') === '1') { KS_MIN = 0; } // already seen this session -> instant
-                sessionStorage.setItem('ks_seen', '1');
-            } catch (e) {}
-            var elapsed = (window.performance && performance.now) ? performance.now() : KS_MIN;
-            var wait = Math.max(0, KS_MIN - elapsed);
-            setTimeout(function() {
-                TweenMax.to($(".loader2"), 0.9, {
+            var loader = document.getElementById('kspaces-loader');
+            function dismiss() {
+                TweenMax.to($(".loader2"), 0.55, {
                     force3D: true,
-                    bottom: "100%",
+                    y: "-100%",
                     ease: Expo.easeInOut,
-                    onComplete: function() {
-                        initpageloadAnimation();
-                    }
+                    onComplete: function() { initpageloadAnimation(); }
                 });
-            }, wait);
+            }
             var chdpt = $(".content-holder").data("pagetitle");
             $(".horizonral-subtitle strong").text(chdpt);
+            if (!loader) { dismiss(); return; }
+            var word = loader.querySelector('.ks-word');
+            var fired = false;
+            function go() { if (fired) return; fired = true; setTimeout(dismiss, 240); }
+            if (word) { word.addEventListener('animationend', go); }
+            setTimeout(go, 5000); // safety cap
+            requestAnimationFrame(function () {
+                requestAnimationFrame(function () { loader.classList.add('ks-go'); });
+            });
         }
         //   Background image ------------------
         var a = $(".bg");

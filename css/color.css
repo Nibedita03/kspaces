@@ -176,3 +176,32 @@ body{ margin-left:0 !important; }
 .fixed-column-wrap_title p{
   color:#ecd2a0 !important; text-shadow:0 1px 14px rgba(0,0,0,.5);
 }
+
+/* ============ Architecturally cute — soft touches ============ */
+/* softer, friendlier corners on imagery & cards */
+.gallery-item,.grid-item-holder,.grid-item-holder img,.team-box,.respimg,img.respimg,
+.box-item img,.single-slider img,.list-single-main-media img,.map,iframe.map,.column-wrap-media{
+  border-radius:20px !important;
+}
+
+/* soft floating shadows */
+.gallery-item,.column-wrap-media,.list-single-main-media,.team-box{
+  box-shadow:0 18px 40px -20px rgba(30,30,45,.30);
+}
+
+/* gentle hover lift + slow zoom on portfolio tiles */
+.gallery-item{ transition:transform .24s cubic-bezier(.2,.7,.2,1), box-shadow .24s ease; }
+.gallery-item:hover{ transform:translateY(-6px); box-shadow:0 28px 52px -18px rgba(30,30,45,.36); }
+.grid-item-holder img{ transition:transform .45s cubic-bezier(.2,.7,.2,1) !important; }
+.gallery-item:hover .grid-item-holder img{ transform:scale(1.06); }
+
+/* team avatars: soft springy hover */
+.ks-tm-av{ transition:transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s ease; }
+.ks-tm:hover .ks-tm-av{ transform:translateY(-4px) scale(1.06); box-shadow:0 16px 30px rgba(17,35,63,.30); }
+
+/* buttons: gentle press */
+.btn,a.btn,input[type=submit]{ transition:transform .16s ease, background .2s ease !important; }
+.btn:hover,a.btn:hover{ transform:translateY(-2px); }
+
+/* soft focus ring on form fields */
+.custom-form input:focus,.custom-form textarea:focus{ border-color:var(--ks-accent) !important; box-shadow:0 0 0 4px rgba(179,147,95,.12) !important; outline:none; }

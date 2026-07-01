@@ -9,7 +9,7 @@
         <title>K Spaces | Architecture & Interiors</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
-        <meta name="keywords" content="K Spaces Interiors, KSPACES, interior design, modular kitchens, luxury villa interiors, home interiors, commercial interiors, turnkey solutions, Hyderabad, PropGo, architecture, residential, commercial, Vastu planning, 3D visualization, false ceiling, home automation"/>
+        <meta name="keywords" content="K Spaces Interiors, KSPACES, interior design, modular kitchens, luxury villa interiors, home interiors, commercial interiors, turnkey solutions, Hyderabad, architecture, residential, commercial, Vastu planning, 3D visualization, false ceiling, home automation"/>
         <meta name="description" content="firm has handled various commercial, institutional, residential, recreational and community projects. The scale of the projects vary from small urban residences to large housing layouts, retail interiors to multiplexes and malls, but design is nothing without details and finesse. It’s the little things that matter. And with those, we bring the experience and dedication to deliver your dream"/>
         <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/reset.css">
@@ -30,38 +30,31 @@
         <!--Loader -->
         <div class="loader2" id="kspaces-loader">
             <div class="ks-loader-center">
-                <svg class="ks-k-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
-                    <rect class="ks-box" x="19" y="19" width="92" height="92"
-                          fill="none" stroke="#ffffff" stroke-width="2.5"
-                          stroke-dasharray="368" stroke-dashoffset="368"/>
-                    <line class="ks-v" x1="43" y1="31" x2="43" y2="99"
-                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
-                          stroke-dasharray="68" stroke-dashoffset="68"/>
-                    <line class="ks-a1" x1="43" y1="65" x2="101" y2="31"
-                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
-                          stroke-dasharray="68" stroke-dashoffset="68"/>
-                    <line class="ks-a2" x1="43" y1="65" x2="101" y2="99"
-                          stroke="#ffffff" stroke-width="12" stroke-linecap="round"
-                          stroke-dasharray="68" stroke-dashoffset="68"/>
+                <svg class="ks-bp" viewBox="0 0 240 170" xmlns="http://www.w3.org/2000/svg" aria-label="K Spaces">
+                    <path class="ks-ln ks-house" d="M38,92 L120,40 L202,92 M62,92 L62,146 L178,146 L178,92"/>
+                    <path class="ks-ln ks-door" d="M104,146 L104,110 L136,110 L136,146"/>
+                    <path class="ks-ln ks-win" d="M74,104 L92,104 L92,122 L74,122 Z"/>
                 </svg>
-                <div class="ks-label-text">K&nbsp;SPACES</div>
+                <div class="ks-word">K&nbsp;&nbsp;S P A C E S</div>
             </div>
         </div>
         <style>
         #kspaces-loader{background:#033067;display:flex;align-items:center;justify-content:center;}
-        .ks-loader-center{text-align:center;}
-        .ks-k-svg{width:128px;height:128px;display:block;margin:0 auto 18px;overflow:visible;}
-        .ks-box{animation:ksDraw .5s ease forwards;}
-        .ks-v {animation:ksDraw .4s ease .3s forwards;}
-        .ks-a1{animation:ksDraw .4s ease .65s forwards;}
-        .ks-a2{animation:ksDraw .4s ease .85s forwards;}
-        @keyframes ksDraw{to{stroke-dashoffset:0;}}
-        .ks-label-text{
-            color:rgba(255,255,255,.9);font-size:12px;letter-spacing:9px;
-            font-family:'Raleway',Arial,sans-serif;text-transform:uppercase;
-            opacity:0;animation:ksFade .5s ease 1.15s forwards;
-        }
-        @keyframes ksFade{from{opacity:0;letter-spacing:14px;}to{opacity:.9;letter-spacing:9px;}}
+        .ks-loader-center{display:flex;flex-direction:column;align-items:center;gap:26px;}
+        .ks-bp{width:220px;max-width:64vw;height:auto;overflow:visible;}
+        .ks-ln{fill:none;stroke:#e7c882;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;will-change:stroke-dashoffset;}
+        .ks-house{stroke-dasharray:540;stroke-dashoffset:540;}
+        .ks-door{stroke-dasharray:130;stroke-dashoffset:130;}
+        .ks-win{stroke-dasharray:80;stroke-dashoffset:80;}
+        .ks-word{font-family:'Jost',sans-serif;font-weight:300;letter-spacing:3px;font-size:23px;color:#fff;opacity:0;transform:translateY(6px);will-change:opacity,transform;}
+        #kspaces-loader.ks-go .ks-house{animation:ksD1 .7s cubic-bezier(.33,0,.2,1) .05s forwards;}
+        #kspaces-loader.ks-go .ks-door{animation:ksD2 .36s cubic-bezier(.33,0,.2,1) .6s forwards;}
+        #kspaces-loader.ks-go .ks-win{animation:ksD2 .32s cubic-bezier(.33,0,.2,1) .66s forwards;}
+        #kspaces-loader.ks-go .ks-word{animation:ksFW .45s ease .95s forwards;}
+        @keyframes ksD1{to{stroke-dashoffset:0;}}
+        @keyframes ksD2{to{stroke-dashoffset:0;}}
+        @keyframes ksFW{to{opacity:1;transform:translateY(0);}}
+        @media(max-width:600px){ .ks-word{font-size:18px;} }
         </style>
         <!-- loader end  -->
         <!-- main start  -->
@@ -225,63 +218,6 @@
                                 <div class="col-wc_dec col-wc_dec2">
                                     <div class="pr-bg pr-bg-white"></div>
                                 </div>
-                                <!--section--> 
-                                <section id="sec1" class="small-padding">
-                                    <div class="container">
-                                        <div class="split-sceen-content_title fl-wrap">
-                                            <div class="pr-bg pr-bg-white"></div>
-                                            <h3> Our story</h3>
-                                            <p>An architecture &amp; interiors practice with a talented team of architects and designers striving for evolution in the design fraternity...  </p>
-                                        </div>
-                                        <div class="column-wrap-content fl-wrap">
-                                            <div class="column-wrap-media fl-wrap">
-                                                <div class="pr-bg pr-bg-white"></div>
-                                                <img src="images/all/1.jpg"  class="respimg" alt="">
-                                                <a href="https://vimeo.com/334410816" class="column-wrap-media_btn color-bg image-popup">
-                                                    Our Story Video <i class="fas fa-play"></i>
-                                                    <div class="pr-bg pr-bg-white"></div>
-                                                </a>
-                                            </div>
-                                            <div class="column-wrap-text">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <h3 class="pr-subtitle">
-                                                            Where Elegance Finds a Home
-                                                            <div class="pr-bg pr-bg-white"></div>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="pr-bg pr-bg-white"></div>
-                                                        <p><b>K Spaces Interiors</b> blends real estate expertise with inspired interior design — creating spaces that are both beautiful and purposeful. We serve premium flats, luxury villas &amp; commercial environments with tailored solutions that balance aesthetics and practicality, delivering value-engineered transformations you'll love.</p>
-                                                        <p>Our one-stop design process covers everything from space planning and concept to material selection, execution, and post-handover support. With a dedicated team of experienced designers and the backing of PropGo's real estate knowledge, we deliver smart, timely, and premium-finish interiors.</p>
-                                                        <p>From stylish 2BHK interiors to luxury villas and dynamic commercial spaces, our portfolio reflects a seamless blend of modern design, functionality, and Vastu-aligned planning — delivered turnkey with premium finishes.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-																																								<div class="column-wrap-media fl-wrap">
-                                                <div class="pr-bg pr-bg-white"></div>
-                                                <div class="row">
-                                                    <!--<div class="col-md-5"> <img src="images/team/5.jpg"  class="respimg" alt=""></div>-->
-                                                    <div class="col-md-7">
-                                                        <ul class="pr-list dark-bg pr-list-color">
-                                                            <li><span>Specialization </span> : Interior Design &amp; Architecture</li>
-                                                            <li><span>Contact </span> : +91 76809 91923</li>
-                                                            <li><span>Website </span> : www.propgo.in/interiors</li>
-                                                            <li><span>Instagram </span> : @kspaces.in</li>
-                                                        </ul>
-                                                        
-                                                    </div>
-																																																				
-                                                </div>
-                                            </div>
-																																												<a href="portfolio.html" class="pr-view">Our Portfolio<i class="fal fa-long-arrow-right"></i></a>
-                                        <div class="section-number right_sn">
-                                            <div class="pr-bg pr-bg-white"></div>
-                                            <span>0</span>1.
-                                        </div>
-                                    </div>
-                                </section>
                                 <!--section end--> 
                                 <!--<div class="section-separator"></div>-->
                                 <!--section --> 
@@ -296,37 +232,6 @@
                                     </div>
                                 </section>
                                 <!--section end--> 
-                                <div class="section-separator"></div>
-                                <!--section--> 
-																																<section id="sec1" class="small-padding">
-                                    <div class="container">
-                                        <div class="split-sceen-content_title fl-wrap">
-                                            <div class="pr-bg pr-bg-white"></div>
-                                            <h3> Top Management</h3>
-                                        </div>
-                                        <div class="column-wrap-content fl-wrap">
-                                            <div class="column-wrap-media fl-wrap">
-                                                <div class="pr-bg pr-bg-white"></div>
-                                                <div class="row">
-                                                    <div class="col-md-5"> <img src="images/team/1.jpg"  class="respimg" alt=""></div>
-																																																				<div class="col-md-7">
-																																																				<h3 class="pr-subtitle">RAJESH BHAIRAGOWNI </h3><p><span> FOUNDER, PRINCIPAL ARCHITECT </span></p>
-																																																				<p>With an academic background in Architecture from SVCA (JNAFAU affiliated) Hyderabad, Rajesh envision himself as a professional in an area where social and environmental responsibility is of utmost importance in both private and public sector. Rajesh’s eye for design detailing and expertise in construction technologies has enabled interpreting the firms vocabulary in new and innovative ways. He believes successful architecture responds to client and user needs concurrently emphasizing on spatial composition and design.</p>
-                                                        <p>He served as a Sr. Associate Architect at reputed Architectural firms for over 14 years, playing a key role in design and conceptualization and later established K Spaces in 2014.</p>
-																																																								<p><b>Specialization:</b> Architect <br><b>University:</b> Jawaharlal Nehru architecture and fine arts university<br> <b>Designation:</b> Founder, Principal Architect</p>
-																																																						
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="section-number right_sn">
-                                            <div class="pr-bg pr-bg-white"></div>
-                                            <span>0</span>2.
-                                        </div>
-                                    </div>
-                                </section>
-                                
-                                <!--section end-->    
                                 <div class="section-separator"></div>
                                 <!--section--> 
                                 <section id="sec5" class="small-padding">
@@ -365,7 +270,7 @@
                                                             <div class="swiper-slide">
                                                                 <div class="testi-item fl-wrap">
                                                                     <h3>DSR CLASSE</h3>
-                                                                    <p>"PropGo Interiors exceeded all expectations. The process was seamless from start to finish, and the elevated design gave our space a completely new character."<br><br>
+                                                                    <p>"K Spaces exceeded all expectations. The process was seamless from start to finish, and the elevated design gave our space a completely new character."<br><br>
                                                                     <b>— Homeowner, DSR Classe</b></p>
                                                                     <a href="#" class="teti-link" target="_blank">Via WhatsApp</a>
                                                                 </div>
