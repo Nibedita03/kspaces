@@ -151,6 +151,16 @@ body{ margin-left:0 !important; }
 .ks-tm-name{ font-family:'Archivo',sans-serif; font-weight:600; font-size:18px; color:var(--ks-ink); }
 .ks-tm-role{ font-family:'Jost',sans-serif; font-size:13px; color:var(--ks-muted); letter-spacing:.5px; margin-top:5px; }
 @media (max-width:700px){ .ks-tm{ width:calc(50% - 15px); } .ks-team-wrap{ padding:0 20px; } .ks-team-title{ font-size:30px; } }
+.ks-founder{ display:flex; align-items:flex-start; gap:40px; margin-top:28px; max-width:820px; }
+.ks-founder-av{
+  flex:0 0 auto; width:120px; height:120px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:var(--ks-navy); color:var(--ks-accent); font-family:'Archivo',sans-serif; font-size:34px; font-weight:600; letter-spacing:1px;
+  box-shadow:0 12px 28px rgba(17,35,63,.20);
+}
+.ks-founder-name{ font-family:'Archivo',sans-serif; font-weight:600; font-size:22px; color:var(--ks-ink); }
+.ks-founder-role{ font-family:'Jost',sans-serif; font-size:13.5px; color:var(--ks-accent); letter-spacing:.6px; margin-top:5px; text-transform:uppercase; }
+.ks-founder-bio{ font-family:'Jost',sans-serif; font-size:15px; line-height:1.8; color:var(--ks-muted); margin-top:16px; }
+@media (max-width:600px){ .ks-founder{ flex-direction:column; align-items:center; text-align:center; gap:20px; } }
 
 /* ---------- Compact footer (was 290px of padding) ---------- */
 .footer-inner{ padding:54px 0 44px !important; }
